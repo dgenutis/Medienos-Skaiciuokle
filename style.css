@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+  background-image: url(/img/produkcija-back1.png),
+    url(/img/produkcija-back2.png);
+  background-size: cover;
+  background-size: 300px, 200px;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-origin: content-box, content-box;
+  background-position-x: 0%, 100%;
+  background-position-y: 100%, 50%;
+  background-attachment: fixed, fixed;
+  width: 100%;
+  height: 100%;
+}
+/* Headeris*/
+header {
+  height: 105px;
+  width: 100%;
+  background-color: #172f31;
+}
+.logo {
+  display: flex;
+}
+
+.logo img {
+  width: 175px;
+  height: 55px;
+  padding: 25px 0 0 50px;
+}
+/* Mediena */
+.pavadinimas {
+  display: flex;
+  justify-content: center;
+}
+
+.pavadinimas h1 {
+  font-family: "Poppins", sans-serif;
+  color: #31685d;
+  font-size: 34px;
+  font-weight: 600;
+  padding-top: 80px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.duomenys,
+.suvestine {
+  background-color: #ffffff;
+  width: 730px;
+  height: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.container1 {
+  padding-top: 25px;
+}
+.container1 h2 {
+  font-family: "Poppins", sans-serif;
+  color: #31685d;
+  font-weight: 500;
+  font-size: 28px;
+  padding-left: 30px;
+}
+.container1 p {
+  font-family: "Poppins", sans-serif;
+  color: #00000080;
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 30px;
+  margin-bottom: 8px;
+}
+
+.nuotraukos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.duomenys1,
+.duomenys2,
+.duomenys3 {
+  border: 0.5px solid rgba(49, 104, 93, 0.6);
+  padding: 15px;
+}
+
+.nuotraukos img {
+  width: 158px;
+  height: 85px;
+}
+.nuotraukos p {
+  font-family: "Poppins", sans-serif;
+  color: #212529;
+  font-size: 16px;
+}
+select {
+  font-family: "Poppins", sans-serif;
+  width: 158px;
+  height: 27px;
+  font-size: 16px;
+  color: #404040;
+  border: 1px solid #ccc;
+}
+
+#kiekis {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  width: 210px;
+  height: 32px;
+  border: 0.5px solid #ccc;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+/* Suvestine */
+
+.pavadinimas2 h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #31685d;
+  padding: 40px 0 0 40px;
+}
+
+.statybineMediena h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(44, 100, 87, 0.5);
+  padding: 0 0 20px 40px;
+}
+
+.info-storis,
+.info-plotis,
+.info-ilgis,
+.info-kiekis,
+.info-kubatura,
+.info-viso {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  width: 100%;
+}
+.storis,
+.plotis,
+.ilgis,
+.kiekis,
+.kubatura,
+.viso {
+  grid-column: span 1;
+  text-align: left;
+  padding-left: 40px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+.storis-info,
+.plotis-info,
+.ilgis-info,
+.kiekis-info,
+.kubatura-info,
+.viso-info {
+  grid-column: 2;
+  text-align: right;
+  padding-right: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #00000080;
+}
+
+.storis-mm,
+.plotis-mm,
+.ilgis-mm,
+.kiekis-vnt,
+.kubatura-kubiniai,
+.viso-pvm {
+  grid-column: 3;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #00000080;
+  padding-bottom: 10px;
+}
+.info-ilgis {
+  padding-bottom: 30px;
+}
+
+.info-kiekis {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.info-kiekis::before,
+.info-kiekis::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  border-top: 1px solid rgba(112, 112, 112, 0.5);
+}
+
+.info-kiekis::after {
+  top: auto;
+  bottom: 0;
+  border-top: none;
+  border-bottom: 1px solid rgba(112, 112, 112, 0.5);
+}
+.info-kubatura {
+  position: relative;
+  padding: 30px 0;
+}
+
+.info-kubatura::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  border-bottom: 1px dashed rgba(112, 112, 112, 0.5);
+}
+.info-kubatura .kubatura-info {
+  font-weight: 600;
+  color: #000000;
+}
+
+.info-viso {
+  padding: 20px 0 40px 0;
+}
+.info-viso .viso {
+  font-size: 18px;
+}
+
+.info-viso .viso-info {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.info-viso .viso-pvm {
+  color: #ff0000;
+  font-size: 14px;
+}
+
+/* informacija */
+
+/* form starting stylings ------------------------------- */
+form {
+  padding-top: 5px;
+}
+.group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.inputas {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #757575;
+}
+.inputas:focus {
+  outline: none;
+}
+
+label {
+  color: rgba(44, 100, 87, 0.5);
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label,
+input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #31685d;
+}
+/* BOTTOM BARS ================================= */
+.bar {
+  position: relative;
+  display: block;
+  width: 300px;
+}
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #31685d;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.bar:before {
+  left: 50%;
+}
+.bar:after {
+  right: 50%;
+}
+/* active state */
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.informacija {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 730px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #f1f1f1;
+  padding: 20px 0 20px 0;
+  border: 1px solid #31685d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tekstas p {
+  width: 350px;
+  font-size: 15px;
+  color: #00000099;
+  font-weight: 400;
+}
+.tel {
+  color: #00000099;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.teises {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #172f31;
+  height: 80px;
+  margin-top: 100px;
+}
+
+.teises p {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+/* button */
+.info-button {
+  border: none;
+  position: relative;
+  /* jeigu be mygtuko */
+  /* display: none; */
+}
+
+.bi-arrow-right-short {
+  color: rgba(44, 100, 87, 0.5);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 280px;
+  bottom: 5px;
+}
+.bi-arrow-right-short:hover {
+  color: #31685d;
+}

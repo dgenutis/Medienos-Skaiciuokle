@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/scripts.js" defer></script>
+    <title>Medienos skaičiuokle</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/img/MobiliLentpjuveLogo.png" alt="logo" />
+      </div>
+    </header>
+    <div class="pavadinimas">
+      <h1>SKAIČIUOKLĖ</h1>
+    </div>
+    <div class="container">
+      <div class="duomenys">
+        <div class="container1">
+          <h2>Medienos kainos ir kubų skaičiuoklė</h2>
+          <p>PASIRINKITE IŠMATAVIMUS:</p>
+        </div>
+        <div class="nuotraukos">
+          <div class="duomenys1">
+            <img src="/img/lentos_aukstis.jpg" alt="" />
+            <p>Storis</p>
+            <select id="storis">
+              <option value="25">25mm</option>
+              <option value="30">30mm</option>
+              <option value="50">50mm</option>
+              <option value="100">100mm</option>
+              <option value="120">120mm</option>
+              <option value="150">150mm</option>
+            </select>
+          </div>
+          <div class="duomenys2">
+            <img src="/img/Lentos_plotis.jpg" alt="" />
+            <p>Plotis</p>
+            <select id="plotis">
+              <option value="50">50mm</option>
+              <option value="75">75mm</option>
+              <option value="100">100mm</option>
+              <option value="150">150mm</option>
+              <option value="200">200mm</option>
+              <option value="250">250mm</option>
+            </select>
+          </div>
+          <div class="duomenys3">
+            <img src="/img/lentos_ilgis.jpg" alt="" />
+            <p>Ilgis</p>
+            <select id="ilgis">
+              <option value="3000">3000mm</option>
+              <option value="4000">4000mm</option>
+              <option value="6000">6000mm</option>
+            </select>
+          </div>
+        </div>
+        <div class="container1">
+          <p>PASIRINKITE LENTŲ KIEKĮ:</p>
+          <input type="number" id="kiekis" value="1" min="1" step="1" />
+        </div>
+      </div>
+      <div class="suvestine">
+        <div class="pavadinimas2">
+          <h2>Suvestinė</h2>
+        </div>
+        <div class="statybineMediena">
+          <h3>STATYBINĖ MEDIENA</h3>
+        </div>
+        <div class="info-suvestine">
+          <div class="info-storis">
+            <div class="storis">Storis:</div>
+            <div class="storis-info">25</div>
+            <div class="storis-mm">mm</div>
+          </div>
+          <div class="info-plotis">
+            <div class="plotis">Plotis:</div>
+            <div class="plotis-info">50</div>
+            <div class="plotis-mm">mm</div>
+          </div>
+          <div class="info-ilgis">
+            <div class="ilgis">Ilgis:</div>
+            <div class="ilgis-info">3000</div>
+            <div class="ilgis-mm">mm</div>
+          </div>
+          <div class="info-kiekis">
+            <div class="kiekis">Lentų kiekis:</div>
+            <div class="kiekis-info">1</div>
+            <div class="kiekis-vnt">vnt.</div>
+          </div>
+          <div class="info-kubatura">
+            <div class="kubatura">Kubatūra:</div>
+            <div class="kubatura-info">0.004</div>
+            <div class="kubatura-kubiniai">m<sup>3</sup></div>
+          </div>
+          <div class="info-viso">
+            <div class="viso">VISO:</div>
+            <div class="viso-info">1.27€</div>
+            <div class="viso-pvm">+ PVM</div>
+          </div>
+        </div>
+      </div>
+      <div class="informacija">
+        <div class="tekstas">
+          <p>
+            Jeigu neradote pageidaujamų matmenų produkcijos, arba domina
+            netradicinių matmenų medienos gaminiai - prašome skambinti
+            <a class="tel" href="tel:+37063054365">+370 630 54365</a>, ar
+            palikite savo kontaktinius duomenis ir mes su jumis netrukus
+            susisieksime.
+          </p>
+        </div>
+        <div class="savo">
+          <form>
+            <div class="group">
+              <input class="inputas" type="text" required />
+              <span class="bar"></span>
+              <label>Vardas</label>
+            </div>
+            <div class="group">
+              <input class="inputas" type="text" required />
+              <span class="bar"></span>
+              <label>Tel. numeris</label>
+            </div>
+            <div class="group">
+              <input class="inputas" type="text" required />
+              <span class="bar"></span>
+              <label>El. Paštas</label>
+            </div>
+            <button class="info-button" type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-right-short"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="teises">
+        <p>© 2024 UAB "Mobili lentpjūvė". Visos teises saugomos.</p>
+      </div>
+    </footer>
+  </body>
+</html>
